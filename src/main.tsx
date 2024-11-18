@@ -6,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Navbar from './components/Navbar.tsx';
 import Settings from './pages/Settings.tsx';
 
 const router = createBrowserRouter([
@@ -26,7 +25,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <Navbar/>
     <RouterProvider router={router}/>
   </StrictMode>,
 )

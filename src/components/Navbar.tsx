@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Navbar = () => {
   return (
     <nav className="flex justify-between p-5 bg-slate-100">
@@ -6,9 +8,9 @@ const Navbar = () => {
       </div>
       <div>
         <ul className="flex justify-between gap-5">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/settings">Settings</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/settings">Settings</Link></li>
         </ul>
       </div>
     </nav>
